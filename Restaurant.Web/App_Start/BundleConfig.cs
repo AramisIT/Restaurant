@@ -15,7 +15,7 @@ namespace TradeHouseWeb.App_Start
             {
             bundles.Add(new ScriptBundle("~/bundles/aramis-solution").Include(
                         "~/Scripts/modernizr-2.6.2.js",
-                        "~/Scripts/mindmup-editabletable.js",
+                        "~/Scripts/table-edit.js",
                         "~/Scripts/aramis.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jQuery").Include(
