@@ -1,0 +1,910 @@
+﻿<Root>
+  <Report>
+    <AdapterParameters>
+      <AdapterParameter adapterName="по умолчанию">
+        <MatrixAdapter>
+          <Tables>
+            <Table Name="Report_FinancialResult" SourceName="Report_FinancialResult">
+              <Column Name="EndBalanceNet" Description="EndBalanceNet" GroupingMethod="GroupBy" />
+              <Column Name="EndBalancePrice" Description="EndBalancePrice" GroupingMethod="GroupBy" />
+              <Column Name="EndBalanceSum" Description="EndBalanceSum" GroupingMethod="GroupBy" />
+              <Column Name="IncomeNet" Description="IncomeNet" GroupingMethod="GroupBy" />
+              <Column Name="IncomePrice" Description="IncomePrice" GroupingMethod="GroupBy" />
+              <Column Name="IncomeSum" Description="IncomeSum" GroupingMethod="GroupBy" />
+              <Column Name="LosesNet" Description="LosesNet" GroupingMethod="GroupBy" />
+              <Column Name="LosesSum" Description="LosesSum" GroupingMethod="GroupBy" />
+              <Column Name="OutcomeNet" Description="OutcomeNet" GroupingMethod="GroupBy" />
+              <Column Name="OutcomePrice" Description="OutcomePrice" GroupingMethod="GroupBy" />
+              <Column Name="OutcomeSum" Description="OutcomeSum" GroupingMethod="GroupBy" />
+              <Column Name="ResultNet" Description="ResultNet" GroupingMethod="GroupBy" />
+              <Column Name="ResultSum" Description="ResultSum" GroupingMethod="GroupBy" />
+              <Column Name="StartBalanceNet" Description="StartBalanceNet" GroupingMethod="GroupBy" />
+              <Column Name="StartBalancePrice" Description="StartBalancePrice" GroupingMethod="GroupBy" />
+              <Column Name="StartBalanceSum" Description="StartBalanceSum" GroupingMethod="GroupBy" />
+              <Column Name="TotalSalesNet" Description="TotalSalesNet" GroupingMethod="GroupBy" />
+              <Column Name="TotalSalesPrice" Description="TotalSalesPrice" GroupingMethod="GroupBy" />
+              <Column Name="TotalSalesSum" Description="TotalSalesSum" GroupingMethod="GroupBy" />
+              <Column Name="WareType" Description="WareType" GroupingMethod="GroupBy" />
+              <Column Name="WareTypeId" Description="WareTypeId" GroupingMethod="GroupBy" />
+            </Table>
+            <Table Name="Report_FinancialResultTotals" SourceName="Report_FinancialResultTotals" />
+            <Table Name="Report_FinancialResultExpenses" SourceName="Report_FinancialResultExpenses" Sorting="cash, article" />
+          </Tables>
+          <LayoutsDefinitions>
+            <Layout Name="report_financialresult_DETAILS" Cap="false">
+              <Rows>
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+              </Rows>
+              <Columns>
+                <Column Width="91" />
+                <Column Width="106" />
+                <Column Width="99" />
+                <Column Width="84" />
+                <Column Width="70" />
+                <Column Width="113" />
+                <Column Width="91" />
+                <Column Width="102" />
+                <Column Width="116" />
+              </Columns>
+              <Cells>
+                <Cell ColumnsInterval="0,0" RowsInterval="1,3" CellValue="WareType" ValueType="Parameter" DecimalPoints="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="1,1" RowsInterval="1,1" CellValue="кг" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="2,2" RowsInterval="1,1" CellValue="startbalancenet" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="3,3" RowsInterval="1,1" CellValue="incomenet" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="4,4" RowsInterval="1,1" CellValue="outcomenet" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="5,5" RowsInterval="1,1" CellValue="endbalancenet" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="6,6" RowsInterval="1,1" CellValue="resultnet" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="7,7" RowsInterval="1,1" CellValue="losesnet" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="8,8" RowsInterval="1,1" CellValue="totalsalesnet" ValueType="Parameter" DecimalPoints="2" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="0,0" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="3,3" CellValue="сумма" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="2,2" RowsInterval="3,3" CellValue="StartBalanceSum" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="3,3" RowsInterval="3,3" CellValue="IncomeSum" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="4,4" RowsInterval="3,3" CellValue="OutcomeSum" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="5,5" RowsInterval="3,3" CellValue="EndBalanceSum" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="6,6" RowsInterval="3,3" CellValue="ResultSum" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="7,7" RowsInterval="3,3" CellValue="LosesSum" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="8,8" RowsInterval="3,3" CellValue="TotalSalesSum" ValueType="Parameter" DecimalPoints="2" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="1,1" RowsInterval="2,2" CellValue="цена" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="2,2" RowsInterval="2,2" CellValue="StartBalancePrice" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="3,3" RowsInterval="2,2" CellValue="IncomePrice" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="4,4" RowsInterval="2,2" CellValue="OutcomePrice" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="5,5" RowsInterval="2,2" CellValue="EndBalancePrice" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="6,6" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="2,2" CellValue="TotalSalesPrice" ValueType="Parameter" DecimalPoints="2" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresult_CAP" Cap="false">
+              <Rows>
+                <Row Height="25" />
+              </Rows>
+              <Columns>
+                <Column Width="91" />
+                <Column Width="57" />
+                <Column Width="99" />
+                <Column Width="84" />
+                <Column Width="70" />
+                <Column Width="113" />
+                <Column Width="91" />
+                <Column Width="102" />
+                <Column Width="116" />
+              </Columns>
+              <Cells>
+                <Cell ColumnsInterval="0,1" RowsInterval="0,0" CellValue="Продукция" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFEAEAEA" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFBBBBBB" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="2,2" RowsInterval="0,0" CellValue="Нач. факт.&#xD;&#xA;остаток" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="Wrap" BackgroundColor="#FFEAEAEA" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFBBBBBB" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="3,3" RowsInterval="0,0" CellValue="Приход" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFEAEAEA" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFBBBBBB" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="4,4" RowsInterval="0,0" CellValue="Продажи" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFEAEAEA" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFBBBBBB" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="5,5" RowsInterval="0,0" CellValue="Факт. остаток" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFEAEAEA" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFBBBBBB" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="6,6" RowsInterval="0,0" CellValue="Результат" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFEAEAEA" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFBBBBBB" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="7,7" RowsInterval="0,0" CellValue="Потери" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFEAEAEA" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFBBBBBB" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="8,8" RowsInterval="0,0" CellValue="Продажи&#xD;&#xA;нарастающие" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="Wrap" BackgroundColor="#FFEAEAEA" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFBBBBBB" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresult_CAPTION" Cap="false">
+              <Rows>
+                <Row Height="50" />
+              </Rows>
+              <Columns>
+                <Column Width="91" />
+                <Column Width="106" />
+                <Column Width="99" />
+                <Column Width="84" />
+                <Column Width="70" />
+                <Column Width="113" />
+                <Column Width="91" />
+                <Column Width="102" />
+                <Column Width="116" />
+              </Columns>
+              <Cells>
+                <Cell ColumnsInterval="0,8" RowsInterval="0,0" CellValue="Финансовый результат за неделю № {WeekNumber}" ValueType="Template" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresulttotals_DETAILS" Cap="false">
+              <Rows>
+                <Row Height="25" />
+                <Row Height="24" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="35" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="25" />
+                <Row Height="24" />
+                <Row Height="25" />
+                <Row Height="25" />
+              </Rows>
+              <Columns>
+                <Column Width="49" />
+                <Column Width="124" />
+                <Column Width="100" />
+                <Column Width="100" />
+                <Column Width="100" />
+                <Column Width="100" />
+                <Column Width="100" />
+                <Column Width="100" />
+                <Column Width="125" />
+                <Column Width="41" />
+                <Column Width="32" />
+                <Column Width="67" />
+                <Column Width="61" />
+              </Columns>
+              <Cells>
+                <Cell ColumnsInterval="1,1" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,6" RowsInterval="1,1" CellValue="Движение денег" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FF804040" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,12" RowsInterval="1,1" CellValue="Общие показатели" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FF804040" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="18,18" CellValue="проценты на займ" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="18,18" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="17,17" CellValue="займ" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="17,17" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="15,15" CellValue="всего" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="15,15" CellValue="IncomePerWeekTotal" ValueType="Parameter" DecimalPoints="2" ShowZero="true" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="15,15" CellValue="MoneyOutcome" ValueType="Parameter" DecimalPoints="2" ShowZero="true" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="15,15" CellValue="MoneyFinishBalance" ValueType="Parameter" DecimalPoints="2" ShowZero="true" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="15,15" CellValue="DebitsTotal" ValueType="Parameter" DecimalPoints="2" ShowZero="true" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFFFFFD2" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="15,15" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="15,15" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="15,15" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="15,15" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="15,15" CellValue="Р-В" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="15,15" CellValue="DifferencePB" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="14,14" CellValue="б/н" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="14,14" CellValue="IncomePerWeek" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="14,14" CellValue="NonCashOutcome" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="14,14" CellValue="NonCashFinishBalance" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="14,14" CellValue="DebitsNonCash" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFFFFFD2" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="14,14" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="14,14" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="14,14" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="14,14" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="14,14" CellValue="Р" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="14,14" CellValue="paidP" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="13,13" CellValue="нал" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="13,13" CellValue="IncomePerWeekCash" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="13,13" CellValue="CashOutcome" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="13,13" CellValue="CashFinishBalance" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="13,13" CellValue="DebitsCash" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFFFFFD2" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="13,13" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="13,13" CellValue="5 проц. долг" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="13,13" CellValue="bonusesDifference" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="13,13" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="13,13" CellValue="В" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="13,13" CellValue="paidB" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="12,12" CellValue="" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="12,12" CellValue="Приход" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="12,12" CellValue="Расход" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="12,12" CellValue="Конец" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="12,12" CellValue="Деб. задолж" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="12,12" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="12,12" CellValue="5 проц. &#xD;&#xA;оплачено" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="12,12" CellValue="paidBonusesToUtkPerYear" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="12,12" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="12,12" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="12,12" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="11,11" CellValue="Общие движения" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="11,11" CellValue="5 проц." ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="11,11" CellValue="ProductIncomeFromUTKSum5" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="9,9" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="9,9" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="9,9" CellValue="бонусы" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="9,9" CellValue="WeekBonus" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="9,9" CellValue="BonusesRemainders" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="9,9" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="9,9" CellValue="долги" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="9,9" CellValue="EndDebts" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="9,9" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="9,9" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="9,9" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="8,8" CellValue="нал в б/н" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="8,8" CellValue="CashToCashBox" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="8,8" CellValue="доля" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="8,8" CellValue="DolayResultTable" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="7,7" CellValue="затраты" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="7,7" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="7,7" CellValue="б/н продажа" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="7,7" CellValue="WeekSoldNonCash" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="7,7" CellValue="WeekSoldCash" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="7,7" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="7,7" CellValue="затраты" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="7,7" CellValue="TotalExpenses" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="7,7" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="7,7" CellValue="оплаты" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="7,7" CellValue="PaidResultTable" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="6,6" CellValue="потери" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFFF8080" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="6,6" CellValue="РВ" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="6,6" CellValue="PBResultTable" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="5,5" CellValue="долги конец" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="5,5" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="5,5" CellValue="наш долг б/н" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="5,5" CellValue="DebtsToAnotherSuppliers" ValueType="Parameter" DecimalPoints="1" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="5,5" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="5,5" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="5,5" CellValue="результат" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="5,5" CellValue="" ValueType="Const" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFFF8080" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="5,5" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="5,5" CellValue="затраты" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="5,5" CellValue="TotalExpensesResultTable" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="4,4" CellValue="гашение долга" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="4,4" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="4,4" CellValue="долг УТК" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="4,4" CellValue="DebtsToUTK" ValueType="Parameter" DecimalPoints="1" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="4,4" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="4,4" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="4,4" CellValue="оплаты на УТК" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="4,4" CellValue="PaidToUtkPerYear" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="4,4" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="4,4" CellValue="потери" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="4,4" CellValue="LosesResultTable" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFFF8080" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="3,3" CellValue="новый долг" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="3,3" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="3,3" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="3,3" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="3,3" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="3,3" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="3,3" CellValue="вал доход" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="3,3" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFFF8080" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="3,3" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="3,3" CellValue="маржа" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="3,3" CellValue="MarginResultTable" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFFF8080" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="1,1" RowsInterval="2,2" CellValue="долги начало" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,0,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="2,2" CellValue="б/н на УТК" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,0,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="2,2" CellValue="NonCashOnUTK" ValueType="Parameter" DecimalPoints="1" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,0,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="2,2" CellValue="приход от УТК" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="2,2" CellValue="ProductIncomeFromUTKSum" ValueType="Parameter" DecimalPoints="0" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="1,1" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="2,2" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="3,3" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="4,4" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="5,5" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="7,7" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="9,9" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="12,12" CellValue="К" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="13,13" CellValue="MoneyFinishBalance" ValueType="Parameter" DecimalPoints="1" ShowZero="true" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="14,14" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="15,15" CellValue="К+Д+Д" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="16,16" CellValue="KDD" ValueType="Parameter" DecimalPoints="1" ShowZero="true" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="17,17" CellValue="К+Д+3-5%" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFE0E0E0" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="18,18" CellValue="KDD_3_5" ValueType="Parameter" DecimalPoints="1" ShowZero="true" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFFF8080" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="3,3" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="4,4" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="5,5" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="6,6" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="7,7" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="8,8" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="9,9" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="10,10" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="11,11" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="12,12" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="2,2" CellValue="StartDebts" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,0,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="3,3" CellValue="NewDebts" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="4,4" CellValue="ClosedDebts" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="5,5" CellValue="EndDebts" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="6,6" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="7,7" CellValue="WeekExpensesCash" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="8,8" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="9,9" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="10,10" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="11,11" CellValue="" ValueType="Const" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="12,12" CellValue="Начало" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" BackgroundColor="#FFDDFFDD" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="13,13" CellValue="CashStartBalance" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="14,14" CellValue="NonCashStartBalance" ValueType="Parameter" DecimalPoints="2" ShowZero="true" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="15,15" CellValue="MoneyStartBalance" ValueType="Parameter" DecimalPoints="2" ShowZero="true" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="16,16" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="17,17" CellValue="BodyLoanRemainder" ValueType="Parameter" DecimalPoints="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="2,2" RowsInterval="18,18" CellValue="PercentsLoanRemainder" ValueType="Parameter" DecimalPoints="0" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+                <Cell ColumnsInterval="0,0" RowsInterval="1,1" CellValue="" ValueType="Const" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12.5" BehaviorOnDisplaying="Cut" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="DateAndTime" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresulttotals_CAP" Cap="true">
+              <Rows>
+                <Row Height="25" />
+              </Rows>
+              <Columns SourceLayout="report_financialresulttotals_DETAILS" />
+              <Cells>
+                <Cell ColumnsInterval="0,0" Cap="true" RowsInterval="0,0" CellValue="" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresultexpenses_DETAILS" Cap="false">
+              <Rows>
+                <Row Height="25" />
+              </Rows>
+              <Columns>
+                <Column Width="146" />
+                <Column Width="129" />
+                <Column Width="90" />
+              </Columns>
+              <Cells>
+                <Cell ColumnsInterval="0,0" RowsInterval="0,0" CellValue="ExpensesType" ValueType="Parameter" DecimalPoints="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="1,1" RowsInterval="0,0" CellValue="weekexpenses" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="2,2" RowsInterval="0,0" CellValue="yearexpenses" ValueType="Parameter" DecimalPoints="2" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresultexpenses_CAP" Cap="true">
+              <Rows>
+                <Row Height="25" />
+              </Rows>
+              <Columns SourceLayout="report_financialresultexpenses_DETAILS" />
+              <Cells>
+                <Cell ColumnsInterval="0,0" Cap="true" RowsInterval="0,0" CellValue="Затрата" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE9E9E9" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="1,1" Cap="true" RowsInterval="0,0" CellValue="Неделя" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE9E9E9" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+                <Cell ColumnsInterval="2,2" Cap="true" RowsInterval="0,0" CellValue="Год" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" BackgroundColor="#FFE9E9E9" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresultexpenses_CAPTION" Cap="false">
+              <Rows>
+                <Row Height="50" />
+              </Rows>
+              <Columns SourceLayout="report_financialresultexpenses_DETAILS" />
+              <Cells>
+                <Cell ColumnsInterval="0,2" RowsInterval="0,0" CellValue="Затраты за неделю / год" ValueType="Const" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresultexpenses_GROUP_article" Cap="false">
+              <Rows>
+                <Row Height="25" />
+              </Rows>
+              <Columns>
+                <Column Width="146" />
+                <Column Width="129" />
+                <Column Width="90" />
+              </Columns>
+              <Cells>
+                <Cell ColumnsInterval="0,2" RowsInterval="0,0" CellValue="article" ValueType="Parameter" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="1,1,1,1" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+            <Layout Name="report_financialresultexpenses_GROUP_cash" Cap="false">
+              <Rows>
+                <Row Height="25" />
+              </Rows>
+              <Columns SourceLayout="report_financialresultexpenses_DETAILS" />
+              <Cells>
+                <Cell ColumnsInterval="0,2" RowsInterval="0,0" CellValue="IsCashName" ValueType="Parameter" DecimalPoints="0" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="19" BehaviorOnDisplaying="StretchColumn" TextColor="#FF000000" BorderThickness="0,0,0,0" BorderColor="#FFE6E6E6" FontStyle="Normal" DateTimeFormat="Date" />
+              </Cells>
+            </Layout>
+          </LayoutsDefinitions>
+          <ReportPartitions>
+            <StaticPartition CaptionForTable="report_financialresult" SeparateMethodId="2">
+              <Row>
+                <Atom Name="report_financialresult_CAPTION">
+                  <DataParameter LayoutParameter="weeknumber">weeknumber</DataParameter>
+                </Atom>
+              </Row>
+            </StaticPartition>
+            <StaticPartition Table="report_financialresult" SeparateMethodId="1">
+              <Row>
+                <Atom Name="report_financialresult_CAP" />
+              </Row>
+            </StaticPartition>
+            <TablePartition Table="report_financialresult" SeparateMethodId="1">
+              <Groups />
+              <DetailsCreator>
+                <Atoms>
+                  <Atom Name="report_financialresult_DETAILS">
+                    <DataParameter LayoutParameter="waretype">waretype</DataParameter>
+                    <DataParameter LayoutParameter="startbalancenet">startbalancenet</DataParameter>
+                    <DataParameter LayoutParameter="incomenet">incomenet</DataParameter>
+                    <DataParameter LayoutParameter="outcomenet">outcomenet</DataParameter>
+                    <DataParameter LayoutParameter="endbalancenet">endbalancenet</DataParameter>
+                    <DataParameter LayoutParameter="resultnet">resultnet</DataParameter>
+                    <DataParameter LayoutParameter="losesnet">losesnet</DataParameter>
+                    <DataParameter LayoutParameter="totalsalesnet">totalsalesnet</DataParameter>
+                    <DataParameter LayoutParameter="startbalancesum">startbalancesum</DataParameter>
+                    <DataParameter LayoutParameter="incomesum">incomesum</DataParameter>
+                    <DataParameter LayoutParameter="outcomesum">outcomesum</DataParameter>
+                    <DataParameter LayoutParameter="endbalancesum">endbalancesum</DataParameter>
+                    <DataParameter LayoutParameter="resultsum">resultsum</DataParameter>
+                    <DataParameter LayoutParameter="losessum">losessum</DataParameter>
+                    <DataParameter LayoutParameter="totalsalessum">totalsalessum</DataParameter>
+                    <DataParameter LayoutParameter="startbalanceprice">startbalanceprice</DataParameter>
+                    <DataParameter LayoutParameter="incomeprice">incomeprice</DataParameter>
+                    <DataParameter LayoutParameter="outcomeprice">outcomeprice</DataParameter>
+                    <DataParameter LayoutParameter="endbalanceprice">endbalanceprice</DataParameter>
+                    <DataParameter LayoutParameter="totalsalesprice">totalsalesprice</DataParameter>
+                  </Atom>
+                </Atoms>
+                <Totals />
+              </DetailsCreator>
+            </TablePartition>
+            <TablePartition Table="report_financialresulttotals" SeparateMethodId="3">
+              <Groups />
+              <DetailsCreator>
+                <Atoms>
+                  <Atom Name="report_financialresulttotals_DETAILS">
+                    <DataParameter LayoutParameter="incomeperweektotal">incomeperweektotal</DataParameter>
+                    <DataParameter LayoutParameter="moneyoutcome">moneyoutcome</DataParameter>
+                    <DataParameter LayoutParameter="moneyfinishbalance">moneyfinishbalance</DataParameter>
+                    <DataParameter LayoutParameter="debitstotal">debitstotal</DataParameter>
+                    <DataParameter LayoutParameter="differencepb">differencepb</DataParameter>
+                    <DataParameter LayoutParameter="incomeperweek">incomeperweek</DataParameter>
+                    <DataParameter LayoutParameter="noncashoutcome">noncashoutcome</DataParameter>
+                    <DataParameter LayoutParameter="noncashfinishbalance">noncashfinishbalance</DataParameter>
+                    <DataParameter LayoutParameter="debitsnoncash">debitsnoncash</DataParameter>
+                    <DataParameter LayoutParameter="paidp">paidp</DataParameter>
+                    <DataParameter LayoutParameter="incomeperweekcash">incomeperweekcash</DataParameter>
+                    <DataParameter LayoutParameter="cashoutcome">cashoutcome</DataParameter>
+                    <DataParameter LayoutParameter="cashfinishbalance">cashfinishbalance</DataParameter>
+                    <DataParameter LayoutParameter="debitscash">debitscash</DataParameter>
+                    <DataParameter LayoutParameter="bonusesdifference">bonusesdifference</DataParameter>
+                    <DataParameter LayoutParameter="paidb">paidb</DataParameter>
+                    <DataParameter LayoutParameter="paidbonusestoutkperyear">paidbonusestoutkperyear</DataParameter>
+                    <DataParameter LayoutParameter="productincomefromutksum5">productincomefromutksum5</DataParameter>
+                    <DataParameter LayoutParameter="weekbonus">weekbonus</DataParameter>
+                    <DataParameter LayoutParameter="bonusesremainders">bonusesremainders</DataParameter>
+                    <DataParameter LayoutParameter="enddebts">enddebts</DataParameter>
+                    <DataParameter LayoutParameter="cashtocashbox">cashtocashbox</DataParameter>
+                    <DataParameter LayoutParameter="dolayresulttable">dolayresulttable</DataParameter>
+                    <DataParameter LayoutParameter="weeksoldnoncash">weeksoldnoncash</DataParameter>
+                    <DataParameter LayoutParameter="weeksoldcash">weeksoldcash</DataParameter>
+                    <DataParameter LayoutParameter="totalexpenses">totalexpenses</DataParameter>
+                    <DataParameter LayoutParameter="paidresulttable">paidresulttable</DataParameter>
+                    <DataParameter LayoutParameter="pbresulttable">pbresulttable</DataParameter>
+                    <DataParameter LayoutParameter="debtstoanothersuppliers">debtstoanothersuppliers</DataParameter>
+                    <DataParameter LayoutParameter="totalexpensesresulttable">totalexpensesresulttable</DataParameter>
+                    <DataParameter LayoutParameter="debtstoutk">debtstoutk</DataParameter>
+                    <DataParameter LayoutParameter="paidtoutkperyear">paidtoutkperyear</DataParameter>
+                    <DataParameter LayoutParameter="losesresulttable">losesresulttable</DataParameter>
+                    <DataParameter LayoutParameter="marginresulttable">marginresulttable</DataParameter>
+                    <DataParameter LayoutParameter="noncashonutk">noncashonutk</DataParameter>
+                    <DataParameter LayoutParameter="productincomefromutksum">productincomefromutksum</DataParameter>
+                    <DataParameter LayoutParameter="kdd">kdd</DataParameter>
+                    <DataParameter LayoutParameter="kdd_3_5">kdd_3_5</DataParameter>
+                    <DataParameter LayoutParameter="startdebts">startdebts</DataParameter>
+                    <DataParameter LayoutParameter="newdebts">newdebts</DataParameter>
+                    <DataParameter LayoutParameter="closeddebts">closeddebts</DataParameter>
+                    <DataParameter LayoutParameter="weekexpensescash">weekexpensescash</DataParameter>
+                    <DataParameter LayoutParameter="cashstartbalance">cashstartbalance</DataParameter>
+                    <DataParameter LayoutParameter="noncashstartbalance">noncashstartbalance</DataParameter>
+                    <DataParameter LayoutParameter="moneystartbalance">moneystartbalance</DataParameter>
+                    <DataParameter LayoutParameter="bodyloanremainder">bodyloanremainder</DataParameter>
+                    <DataParameter LayoutParameter="percentsloanremainder">percentsloanremainder</DataParameter>
+                  </Atom>
+                </Atoms>
+                <Totals />
+              </DetailsCreator>
+            </TablePartition>
+            <StaticPartition CaptionForTable="report_financialresultexpenses" SeparateMethodId="5">
+              <Row>
+                <Atom Name="report_financialresultexpenses_CAPTION" />
+              </Row>
+            </StaticPartition>
+            <StaticPartition Table="report_financialresultexpenses" SeparateMethodId="4">
+              <Row>
+                <Atom Name="report_financialresultexpenses_CAP" />
+              </Row>
+            </StaticPartition>
+            <TablePartition Table="report_financialresultexpenses" SeparateMethodId="4">
+              <Groups>
+                <Group SourceName="cash" Expanded="true">
+                  <Atoms>
+                    <Atom Name="report_financialresultexpenses_GROUP_cash">
+                      <DataParameter LayoutParameter="iscashname">iscashname</DataParameter>
+                    </Atom>
+                  </Atoms>
+                  <Totals />
+                </Group>
+                <Group SourceName="article" Expanded="true">
+                  <Atoms>
+                    <Atom Name="report_financialresultexpenses_GROUP_article">
+                      <DataParameter LayoutParameter="article">article</DataParameter>
+                    </Atom>
+                  </Atoms>
+                  <Totals />
+                </Group>
+              </Groups>
+              <DetailsCreator>
+                <Atoms>
+                  <Atom Name="report_financialresultexpenses_DETAILS">
+                    <DataParameter LayoutParameter="expensestype">expensestype</DataParameter>
+                    <DataParameter LayoutParameter="weekexpenses">weekexpenses</DataParameter>
+                    <DataParameter LayoutParameter="yearexpenses">yearexpenses</DataParameter>
+                  </Atom>
+                </Atoms>
+                <Totals />
+              </DetailsCreator>
+            </TablePartition>
+          </ReportPartitions>
+        </MatrixAdapter>
+        <AdapterSettings>
+          <ShowToAll>false</ShowToAll>
+          <AlbumPrinting>false</AlbumPrinting>
+        </AdapterSettings>
+      </AdapterParameter>
+    </AdapterParameters>
+  </Report>
+  <ReportParameters>
+    <Parameters>
+      <Parameter Name="WeekNumber" Type="System.Int32" Description="Неделя" Width="180" Location="58, 10" LabelLocation="10, 13" DefaultValue="Week" />
+      <Parameter Name="Year" Type="System.Int32" Description="Год" Width="180" Location="277, 10" LabelLocation="248, 13" DefaultValue="Year" />
+    </Parameters>
+    <StoredProcedures>
+      <StoredProcedure Name="Report_FinancialResultTotals">
+        <Parameter Name="WeekNumber" />
+        <Parameter Name="Year" />
+      </StoredProcedure>
+      <StoredProcedure Name="Report_FinancialResultExpenses">
+        <Parameter Name="WeekNumber" />
+        <Parameter Name="Year" />
+      </StoredProcedure>
+      <StoredProcedure Name="Report_FinancialResult">
+        <Parameter Name="WeekNumber" />
+        <Parameter Name="Year" />
+      </StoredProcedure>
+    </StoredProcedures>
+  </ReportParameters>
+  <Settings>
+    <Decription>Финансовый результат</Decription>
+    <Id>1</Id>
+    <ReportDisplayName>Финансовый результат</ReportDisplayName>
+    <StartIntervalType>NoLimits</StartIntervalType>
+    <ReportOwner>0</ReportOwner>
+    <AdapterName></AdapterName>
+    <FinishIntervalType>NoLimits</FinishIntervalType>
+    <ReportDateParameterName></ReportDateParameterName>
+    <AllowedSavingInCloud>false</AllowedSavingInCloud>
+    <ParentId>0</ParentId>
+  </Settings>
+  <ColumnsDescription>
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="EndBalanceNet" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="EndBalancePrice" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="EndBalanceSum" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="IncomeNet" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="IncomePrice" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="IncomeSum" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="LosesNet" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="LosesSum" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="OutcomeNet" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="OutcomePrice" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="OutcomeSum" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="ResultNet" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="ResultSum" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="StartBalanceNet" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="StartBalancePrice" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="StartBalanceSum" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="TotalSalesNet" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="TotalSalesPrice" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="TotalSalesSum" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="WareType" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResult" OriginalColumnName="WareTypeId" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResultTotals" OriginalColumnName="ClosedDebts" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResultTotals" OriginalColumnName="EndDebts" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResultTotals" OriginalColumnName="StartDebts" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResultExpenses" OriginalColumnName="ClosedDebts" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResultExpenses" OriginalColumnName="EndDebts" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+    <Row ReportTableName="Report_FinancialResultExpenses" OriginalColumnName="StartDebts" ColumnDescription="" EnumNameColumn="" AramisTableName="" GroupingMethodColumn="0" FirstOperandColumn="" SecondOperandColumn="" />
+  </ColumnsDescription>
+  <Roles />
+  <Categories />
+  <StoredProcedures>
+    <Item>
+
+CREATE PROCEDURE Report_FinancialResultTotals 
+	(@WeekNumber int, @Year int)
+AS	
+BEGIN
+	declare @StartYear datetime2 = cast(cast(@Year as char(4))+'-01-01' as date);
+	declare @StartDate datetime2 = dbo.GetFirstDayOfWeek(@WeekNumber, @Year);
+	declare @FinishDate datetime2 = dateadd(day, 7, dateadd(millisecond, -1, @StartDate));
+	
+	declare @StartDebt numeric(25,2) = isnull((select Sum([Sum]) from [dbo].[GetDebtsBalance] (@StartDate, -1)), 0);
+	declare @IncomeDebt numeric(25,2) = isnull((select Sum([Sum]) from Remainders_DebtsBalance_History where [Sum]&gt;0 and MotionDate between @StartDate and @FinishDate), 0);
+	declare @OutcomeDebt numeric(25,2) = isnull((select Sum(-[Sum]) from Remainders_DebtsBalance_History where [Sum]&lt;0 and MotionDate between @StartDate and @FinishDate), 0);
+	
+	declare @UtkId bigint = isnull((select cast(Value as bigint) from SystemConsts where Description = 'UtkContractor'), 0);
+	declare @BonusesArticle bigint = isnull((select cast(Value as bigint) from SystemConsts where Description = 'BonusesReturning'), 0);
+	declare @ArticleB bigint = isnull((select cast(Value as bigint) from SystemConsts where Description = 'ArticleB'), 0);
+	declare @ArticleP bigint = isnull((select cast(Value as bigint) from SystemConsts where Description = 'ArticleP'), 0);
+	
+	declare @PeriodStartDate datetime2 = case when @StartYear&lt;@StartDate then @StartYear else @StartDate end;
+	
+	declare @WeekExpensesCash numeric(25,2), @TotalExpenses numeric(25,2), 
+		@WeekSoldNonCash numeric(25,2), @WeekSoldCash numeric(25,2), @WeekBonus numeric(25,2),
+		@BonusesRemainders numeric(25,2),
+		@ProductIncomeFromUTKSum numeric(25,2);
+	
+	declare @paidBonusesToUtkPerYear decimal(25,2), @paidB decimal(25,2), @paidP decimal(25,2);
+	
+	select @WeekExpensesCash = Sum(case when [Date] between @StartDate and @FinishDate and Cash = 1 then [Sum] else 0 end),
+		@TotalExpenses =  Sum(case when [Date] between @StartYear and @FinishDate and Cash = 1 then [Sum] else 0 end),
+		@paidBonusesToUtkPerYear = Sum(case when [Date] between @StartYear and @FinishDate 
+			and Contractor = @UtkId
+			and Article = @BonusesArticle
+			then [Sum] else 0 end),
+		@paidB = Sum(case when [Date] between @StartYear and @FinishDate and Article = @ArticleB then [Sum] else 0 end),
+		@paidP = Sum(case when [Date] between @StartYear and @FinishDate and Article = @ArticleP then [Sum] else 0 end)
+		from Expenses where [Date] between @PeriodStartDate and @FinishDate and MarkForDeleting = 0;
+	
+	declare @IncomePerWeek decimal(25,2);
+	declare @IncomePerWeekCash decimal(25,2);
+	
+	select @WeekSoldCash = Sum(case when [Date] between @StartDate and @FinishDate and Cash = 1 then [Sum] else 0 end),
+		@WeekSoldNonCash =  Sum(case when [Date] between @StartDate and @FinishDate and Cash = 0 then [Sum] else 0 end),
+		@IncomePerWeekCash = Sum(case when [Date] between @StartDate and @FinishDate and Cash = 1 then Paid else 0 end),
+		@IncomePerWeek = Sum(case when [Date] between @StartDate and @FinishDate and Cash = 0 then Paid else 0 end),
+		@WeekBonus =  Sum(case when [Date] between @StartDate and @FinishDate then [Bonus] else 0 end)
+		from Shipment where [Date] between @PeriodStartDate and @FinishDate and MarkForDeleting = 0;
+	
+	select @ProductIncomeFromUTKSum = Sum(case when [Date] between @StartYear and @FinishDate then [Sum] else 0 end)
+		from Acception where [Date] between @PeriodStartDate and @FinishDate and MarkForDeleting = 0;
+		
+	declare @bodyLoanRemainder as decimal(25,2);
+	declare @percentsLoanRemainder as decimal(25,2);
+	
+	with loans as (
+select cap.Id, cap.BodyRemainder, cap.[Percent] P, cap.Date, isnull(max(s.LineNumber), -1) LastLine
+	from Loan cap 
+	left join SubLoanRepayment s on s.IdDoc = cap.Id and cap.Active = 1 and cap.MarkForDeleting = 0
+	group by cap.Id, cap.BodyRemainder, cap.[Percent], cap.Date
+)
+select @bodyLoanRemainder = Sum(cap.BodyRemainder), 
+	@percentsLoanRemainder = Sum(isnull(s.PercentsReminder,0) + cap.BodyRemainder * cap.P 
+		* DATEDIFF(day, cast(isnull(Expenses.Date, cap.Date) as date), cast(@FinishDate as date)) / 36500)
+	from loans cap
+	left join SubLoanRepayment s on cap.Id = s.IdDoc and s.LineNumber = cap.LastLine
+	left join Expenses on Expenses.Id = s.Expenses;
+	
+	declare @DebitsCash decimal(25,2) = isnull((select Sum(Summa) from dbo.[GetDebitsBalance](@FinishDate, 0, 1)), 0);
+	declare @DebitsNonCash decimal(25,2) = isnull((select Sum(Summa) from dbo.[GetDebitsBalance](@FinishDate, 0, 0)), 0);
+	
+	declare @CashStartBalance decimal(25,2) = isnull((select Sum(Summa) from dbo.[GetCashFlow](@StartDate, 1)), 0);
+	declare @NonCashStartBalance decimal(25,2) = isnull((select Sum(Summa) from dbo.[GetCashFlow](@StartDate, 0)), 0);
+	 
+	declare @CashFinishBalance decimal(25,2) = isnull((select Sum(Summa) from dbo.[GetCashFlow](@FinishDate, 1)), 0);
+	declare @NonCashFinishBalance decimal(25,2) = isnull((select Sum(Summa) from dbo.[GetCashFlow](@FinishDate, 0)), 0);
+	
+	declare @CashOutcome decimal(25,2);
+	declare @NonCashOutcome decimal (25,2);
+	
+	select @CashOutcome = ISNULL(-Sum(case when h.Cash = 1 then h.Summa else 0 end), 0),
+		@NonCashOutcome = ISNULL(-Sum(case when h.Cash = 0 then h.Summa else 0 end), 0)
+		from dbo.Remainders_CashFlow_History h
+		where h.MotionDate between @StartDate and @FinishDate and h.Summa &lt; 0
+	
+	declare @NonCashOnUTK decimal(25,2), @PaidToUtkPerYear decimal(25,2);
+	
+	select @NonCashOnUTK = isnull(Sum(case when cap.Date &gt;= @StartDate and cap.Cash = 0 then cap.Sum else 0 end), 0),
+		@PaidToUtkPerYear = isnull(Sum(case when cap.Date &gt;= @StartYear then cap.Sum else 0 end), 0)
+	from MoneyOutcome cap
+	where cap.date between @PeriodStartDate and @FinishDate and cap.Contractor = @UtkId 
+		and cap.MarkForDeleting = 0 
+	
+	declare @DebtsToUTK decimal(25,2);
+	declare @DebtsToAnotherSuppliers decimal(25,2);
+	
+	select @DebtsToUTK = isnull(sum(case when b.Contractor = @UtkId then b.Summa else 0 end),0),
+		@DebtsToAnotherSuppliers = isnull(sum(case when b.Contractor = @UtkId then 0 else b.Summa end),0)
+		from dbo.GetDebtsToSuppliers(@FinishDate, 0, 0) b;
+		
+	select @BonusesRemainders = isnull(sum(Summa),0) from dbo.GetBonusesBalance(@FinishDate, 0);
+	
+	declare @CashToCashBox decimal(25,2) = isnull((select Sum(c.[Sum]) from MoneyIncome c where c.Date between @StartDate and @FinishDate and c.MarkForDeleting = 0 and c.CashToСashbox = 1), 0);
+	declare @kdd decimal(25,2) = (@NonCashFinishBalance + @CashFinishBalance) + (@DebitsNonCash + @DebitsCash) - @DebtsToUTK - @DebtsToAnotherSuppliers;
+    
+    declare @productionSum decimal(25,2);
+    
+    -- getting sum remainder BEGIN
+    declare @addDaysToDate int = (
+	case 
+		when @WeekNumber &lt; 5 
+			then 50 
+		when @WeekNumber &gt; 50 
+			then -50 
+		else 
+			0 
+	end);	
+	declare @AveragePricesLastWeekId bigint = isnull((select top 1 Id from Inventory where YEAR(DATEADD(day , @addDaysToDate , [Date])) = @Year and DATEPART(ISO_WEEK, [Date]) = (@WeekNumber-1) and MarkForDeleting = 0), 0);
+	declare @AveragePricesCurrentWeekId bigint = isnull((select top 1 Id from Inventory where YEAR(DATEADD(day , @addDaysToDate , [Date])) = @Year and DATEPART(ISO_WEEK, [Date]) = (@WeekNumber) and MarkForDeleting = 0), 0);
+	-- getting sum remainder END
+	
+	declare @Loan5Percent decimal(25,2) = @ProductIncomeFromUTKSum * 0.05 - @paidBonusesToUtkPerYear; 
+    
+select @productionSum = isnull((
+select sum(EndBalanceSum) 
+from dbo.FinanceResult(@WeekNumber, @Year, @addDaysToDate, @AveragePricesLastWeekId, @AveragePricesCurrentWeekId)), 0);
+
+declare @CameFromUtkIndex decimal(25,5) = case when @ProductIncomeFromUTKSum = 0 then 0 else 100/@ProductIncomeFromUTKSum end;
+
+    select
+    91919191 * @CameFromUtkIndex MarginResultTable,
+    91919191 * @CameFromUtkIndex LosesResultTable,     
+    @TotalExpenses * @CameFromUtkIndex TotalExpensesResultTable,
+    (@paidP+@paidB)* @CameFromUtkIndex PBResultTable,
+    @paidBonusesToUtkPerYear * @CameFromUtkIndex DolayResultTable,
+    @PaidToUtkPerYear * @CameFromUtkIndex PaidResultTable, 
+    @paidB paidB, @paidP paidP, @paidP - @paidB DifferencePB,
+    @paidBonusesToUtkPerYear paidBonusesToUtkPerYear, @ProductIncomeFromUTKSum * 0.05 ProductIncomeFromUTKSum5,
+    @Loan5Percent bonusesDifference,
+    @PaidToUtkPerYear PaidToUtkPerYear,
+    @kdd KDD,
+    @kdd - @Loan5Percent - @BonusesRemainders - @bodyLoanRemainder - @percentsLoanRemainder KDD_3_5,
+    @CashToCashBox CashToCashBox,
+    @BonusesRemainders BonusesRemainders,
+    @DebtsToUTK DebtsToUTK, @DebtsToAnotherSuppliers DebtsToAnotherSuppliers,
+    @NonCashOnUTK NonCashOnUTK,
+    @CashOutcome CashOutcome, @NonCashOutcome NonCashOutcome, @CashOutcome + @NonCashOutcome [MoneyOutcome],
+    @CashStartBalance CashStartBalance, @NonCashStartBalance NonCashStartBalance, @CashStartBalance + @NonCashStartBalance MoneyStartBalance,
+    @CashFinishBalance CashFinishBalance, @NonCashFinishBalance NonCashFinishBalance, @NonCashFinishBalance + @CashFinishBalance MoneyFinishBalance,
+    @DebitsCash DebitsCash, @DebitsNonCash DebitsNonCash, @DebitsNonCash + @DebitsCash DebitsTotal,
+    @IncomePerWeekCash IncomePerWeekCash, @IncomePerWeek IncomePerWeek, @IncomePerWeekCash + @IncomePerWeek IncomePerWeekTotal,
+    @bodyLoanRemainder BodyLoanRemainder, @percentsLoanRemainder PercentsLoanRemainder,
+    @ProductIncomeFromUTKSum ProductIncomeFromUTKSum, @WeekBonus WeekBonus, 
+    @WeekSoldCash WeekSoldCash, @WeekSoldNonCash WeekSoldNonCash, @WeekExpensesCash WeekExpensesCash, 
+    @TotalExpenses TotalExpenses, @StartDebt StartDebts, @IncomeDebt NewDebts, @StartDebt+@IncomeDebt-@OutcomeDebt EndDebts, @OutcomeDebt ClosedDebts,  
+    @StartDate startDate, @FinishDate finishDate
+END	
+
+
+
+
+
+</Item>
+    <Item>
+
+CREATE PROCEDURE Report_FinancialResultExpenses
+	(@WeekNumber int, @Year int)
+AS	
+BEGIN
+	declare @StartYear datetime2 = cast(cast(@Year as char(4))+'-01-01' as date);
+	
+	declare @StartDate datetime2 = dbo.GetFirstDayOfWeek(@WeekNumber, @Year);
+	declare @FinishDate datetime2 = dateadd(day, 7, dateadd(millisecond, -1, @StartDate));
+	
+	declare @PeriodStartDate datetime2 = case when @StartYear&lt;@StartDate then @StartYear else @StartDate end;
+	
+	select Sum(case when e.[Date] between @StartDate and @FinishDate then e.[Sum] else 0 end) WeekExpenses,
+		Sum(case when e.[Date] between @StartYear and @FinishDate then e.[Sum] else 0 end) YearExpenses,
+		Cash, isnull(RTRIM(a.Description),'') Article, isnull(RTRIM(et.Description),'') ExpensesType,
+		case when cash = 1 then 'Нал' else 'Б/Н' end IsCashName
+		from Expenses e
+		left join ExpensesArticles a on a.Id = e.Article
+		left join ExpensesTypes et on et.Id = e.ExpensesType
+		where e.[Date] between @PeriodStartDate and @FinishDate and e.MarkForDeleting = 0
+		group by Cash, a.Description, et.Description
+END	
+
+</Item>
+    <Item>
+
+CREATE PROCEDURE Report_FinancialResult 
+	(@WeekNumber int, @Year int)
+AS
+BEGIN
+declare @addDaysToDate int = (
+	case 
+		when @WeekNumber &lt; 5 
+			then 50 
+		when @WeekNumber &gt; 50 
+			then -50 
+		else 
+			0 
+	end);
+	
+declare @AveragePricesLastWeekId bigint = isnull((select top 1 Id from Inventory where YEAR(DATEADD(day , @addDaysToDate , [Date])) = @Year and DATEPART(ISO_WEEK, [Date]) = (@WeekNumber-1) and MarkForDeleting = 0), 0);
+declare @AveragePricesCurrentWeekId bigint = isnull((select top 1 Id from Inventory where YEAR(DATEADD(day , @addDaysToDate , [Date])) = @Year and DATEPART(ISO_WEEK, [Date]) = (@WeekNumber) and MarkForDeleting = 0), 0);
+
+select * from dbo.FinanceResult(@WeekNumber, @Year, @addDaysToDate, @AveragePricesLastWeekId, @AveragePricesCurrentWeekId);
+
+END
+
+
+
+
+
+
+
+</Item>
+  </StoredProcedures>
+</Root>
