@@ -29,5 +29,10 @@ namespace TradeHouse.DatabaseObjects
         public override void AddPermissionsToNotAuthorizedRoles(AramisRoleDefinition role)
             {
             }
+
+        public override void AddPermissionsToSuperAdmin(AramisRoleDefinition role)
+            {
+            role.AddPermission<Users>(PermissionsFullRight);
+            }
         }
     }

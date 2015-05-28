@@ -1,0 +1,25 @@
+﻿@using Aramis.Core
+@using Catalogs
+@using WebCore
+@using WebCore.Helpers
+@{
+    ViewBag.Title = "Index";
+}
+
+@Html.Partial("ObjectsList", AramisObjectType.Document)
+<hr />
+@Html.Partial("ObjectsList", AramisObjectType.Catalog)
+<hr />
+<h4>Отчеты:</h4>
+@Html.Partial("ObjectsList", AramisObjectType.Report)
+<hr />
+
+<script>
+    $(document).ready(function () {
+        $('#clearLocalRepositories').on('click', function () {
+            $A.clearCache();
+            $('#clearLocalRepositories').hide();
+        });
+    })
+</script>
+

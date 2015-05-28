@@ -11,8 +11,7 @@ namespace TradeHouseDesktop
         [STAThread, AramisSystem(DefaultLanguage = Language.Russian)]
         public static void Main(string[] args)
             {
-            //SqlParameters.SqlType = SQLTypes.Azure;
-            SystemAramis.SystemStart(new DesktopUserInterfaceEngine(typeof(AramisMainWindow), typeof(Users)));
+            SystemAramis.SystemStart(args, new DesktopUserInterfaceEngine(typeof(AramisMainWindow), typeof(Users)));
             }
         }
     }

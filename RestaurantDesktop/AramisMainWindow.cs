@@ -76,20 +76,6 @@ namespace TradeHouseDesktop
 
         private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e) { }
 
-
-        private void AramisMainWindow_Shown(object sender, EventArgs e)
-            {
-            if (SolutionRoles.TopManager || SolutionRoles.SuperAdmin)
-                {
-                ribbon.AddMenuItem("Обновить приемки, отгрузки", () =>
-                    A.New<IAdminFeatures>()
-                        .GetBehaviour<AdminFeaturesBehaviour>()
-                        .UpdateAllDocumentsAfterWaresChanging());
-
-                }
-            }
-
-
         private void barButtonItem13_ItemClick(object sender, ItemClickEventArgs e)
             {
             //MatrixReports user = (MatrixReports)new Catalogs.MatrixReports().Read(1);
@@ -121,27 +107,22 @@ namespace TradeHouseDesktop
 
         private void barButtonItem6_ItemClick_1(object sender, ItemClickEventArgs e)
             {
-            UserInterface.Current.ShowList(typeof(IAcceptance));
             }
 
         private void barButtonItem7_ItemClick_1(object sender, ItemClickEventArgs e)
             {
-            UserInterface.Current.ShowList(typeof(IShipment), true);
             }
 
         private void barButtonItem10_ItemClick_1(object sender, ItemClickEventArgs e)
             {
-            UserInterface.Current.ShowList(typeof(IInventory));
             }
 
         private void barButtonItem12_ItemClick(object sender, ItemClickEventArgs e)
             {
-            UserInterface.Current.ShowList(typeof(IMoneyIncome));
             }
 
         private void barButtonItem14_ItemClick(object sender, ItemClickEventArgs e)
             {
-            UserInterface.Current.ShowList(typeof(IMoneyOutcome));
             }
 
         private void barButtonItem16_ItemClick(object sender, ItemClickEventArgs e)
@@ -151,7 +132,6 @@ namespace TradeHouseDesktop
 
         private void barButtonItem19_ItemClick(object sender, ItemClickEventArgs e)
             {
-            UserInterface.Current.ShowList(typeof(IIncomeDebt));
             }
 
         private void barButtonItem22_ItemClick(object sender, ItemClickEventArgs e)
@@ -161,7 +141,6 @@ namespace TradeHouseDesktop
 
         private void barButtonItem27_ItemClick(object sender, ItemClickEventArgs e)
             {
-            UserInterface.Current.ShowList(typeof(IOutcomeDebt));
             }
 
         private void barButtonItem22_ItemClick_1(object sender, ItemClickEventArgs e)

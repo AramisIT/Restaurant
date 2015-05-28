@@ -8,8 +8,8 @@
     <ProjectGuid>{AF33782E-8B61-4179-99FD-AD049CDD5EFA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TradeHouse</RootNamespace>
-    <AssemblyName>TradeHouseCore</AssemblyName>
+    <RootNamespace>Restaurant</RootNamespace>
+    <AssemblyName>RestaurantCore</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -73,7 +73,7 @@
     </Reference>
     <Reference Include="DBInteraction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\UTK\Aramis.NET\Aramis\bin\Release\DBInteraction.dll</HintPath>
+      <HintPath>..\..\..\UTK\Aramis.NET\DBInteraction\bin\Release\DBInteraction.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

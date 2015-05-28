@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("TradeHouse")]
+[assembly: AssemblyTitle("Restaurant")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany( "Aramis IT" )]
-[assembly: AssemblyProduct("TradeHouse")]
+[assembly: AssemblyProduct("Restaurant")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("A937C572-A3A1-4609-978C-1505635F69F2")]
+[assembly: Guid("952C08E3-6D9B-4D05-BD24-D9B086487E13")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

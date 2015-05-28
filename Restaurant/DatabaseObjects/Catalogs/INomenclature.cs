@@ -24,9 +24,6 @@ namespace Catalogs
         [DataField(ShowInForm = false)]
         long ExternalId { get; set; }
 
-        [DataField(Description = "Группа товара", ShowInList = true)]
-        IWareGroup WareGroup { get; set; }
-
         [DataField(Description = "Вид номенклатуры")]
         NomenclatureTypes Type { get; set; }
 

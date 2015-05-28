@@ -1,0 +1,79 @@
+﻿@using System.Web.Optimization
+@using Documents
+@using WebCore
+@using WebCore.Helpers
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арамис - Торговый дом</title>
+    @Styles.Render("~/bootstrap/css")
+</head>
+<body>
+    <div class="modalDialog"></div>
+
+    <div id="page">
+
+        <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+            <div class="container">
+                @{
+                    const string selectedHrefClass = "current";
+                    var homeClass = ViewBag.CurrentRoute == RouteNameConstants.Default ? selectedHrefClass : string.Empty;
+                    object tableName;
+                    ViewContext.RouteData.Values.TryGetValue("tableName", out tableName);
+                    if (tableName == null)
+                        {
+                        tableName = string.Empty;
+                        }
+
+                   // var shipmentClass = tableName.Equals(typeof(IPayment).GetTableName()) ? selectedHrefClass : string.Empty;
+                    var expensesClass = tableName.Equals(typeof(Catalogs.Users).GetTableName()) ? selectedHrefClass : string.Empty;
+                }
+                <div>
+                    <a class="navbar-brand @homeClass" href="@Url.RouteUrl(RouteNameConstants.Default, new RouteValueDictionary() { { "Controller", "Home" } })">Aramis</a>
+
+
+                 @*   <a href="@Url.RouteUrl(RouteNameConstants.ItemView, new RouteValueDictionary()
+                                 {
+                                 {"tableName",typeof(IPayment).GetTableName()},
+                                 {"id","0"},
+                                 {"action","Show"}
+                                 })" class="navbar-brand @shipmentClass">Платеж</a>*@
+
+                    <a href="@Url.RouteUrl(RouteNameConstants.ItemView, new RouteValueDictionary()
+                                 {
+                                 {"tableName",typeof(Catalogs.Users).GetTableName()},
+                                 {"id","0"},
+                                 {"action","Show"}
+                                 })" class="navbar-brand @expensesClass">Пользователи</a>
+                </div>
+                <div class="navbar-brand navbar-right">
+                    <a href="@Url.RouteUrl(RouteNameConstants.SignOut)" >Выход</a> <small>(@User.Identity.Name)</small>
+                </div>
+            </div>
+        </nav>
+
+        @Scripts.Render("~/bundles/jQuery")
+        @Html.WriteCommonConsts()
+        @Html.WriteClientConsts(new[]
+            {
+            new KeyValuePair<string, string>("GET_ITEMS_LIST_DATA_URL",Url.RouteUrl(RouteNameConstants.UIajax, new { action = "GetItemsList" })),
+            new KeyValuePair<string, string>("TOGGLE_MARK_FOR_DELETION",Url.RouteUrl(RouteNameConstants.UIajax, new { action = "ToggleMarkForDeletion" }))
+            })
+        <script src="~/Scripts/bootstrap.js"></script>
+        @Scripts.Render("~/bundles/aramis-solution")
+
+        <div class="container body-content">
+            @RenderBody()
+        </div>
+    </div>
+
+    @*  <footer>
+        <div id="foot">
+            <p>&copy; @DateTime.Now.Year - Aramis Trade House</p>
+        </div>
+    </footer>*@
+
+</body>
+</html>

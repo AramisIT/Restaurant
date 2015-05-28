@@ -23,9 +23,6 @@ namespace Catalogs
         [DataField(Description = "Телефон", Size = 25)]
         string Phone { get; set; }
 
-        [DataField(ShowInList = true)]
-        ISalePoint SalePoint { get; set; }
-
         [DataField(Description = "Перевзвешивает при приеме", ShowInList = true)]
         bool Reweight { get; set; }
         }
@@ -35,11 +32,6 @@ namespace Catalogs
         public ContractorBehaviour(IContractor item)
             : base(item)
             {
-            }
-
-        public override void InitNewBeforeShowing(IItemViewModeParameters viewModeParameters)
-            {
-            O.SalePoint = A.New<ISalePoint>(SalePointExtentions.GetSalePointIdForUser());
             }
         }
 

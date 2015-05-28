@@ -360,7 +360,6 @@
             this.Text = "Торговый дом";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AramisMainWindow_Load);
-            this.Shown += new System.EventHandler(this.AramisMainWindow_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smallImagesCollection)).EndInit();
