@@ -141,14 +141,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\aramis.css" />
+    <Content Include="..\..\..\WebCore\WebCore\Content\aramis.css">
+      <Link>Content\aramis.css</Link>
+    </Content>
+    <Content Include="..\..\..\WebCore\WebCore\Content\jquery-ui.custom.css">
+      <Link>Content\jquery-ui.custom.css</Link>
+    </Content>
+    <Content Include="..\..\..\WebCore\WebCore\Content\ZeroClipboard.swf">
+      <Link>Content\ZeroClipboard.swf</Link>
+    </Content>
+    <Content Include="..\..\..\WebCore\WebCore\Scripts\aramis.js">
+      <Link>Scripts\aramis.js</Link>
+    </Content>
+    <Content Include="..\..\..\WebCore\WebCore\Scripts\items.views\SystemUpdates.js">
+      <Link>Scripts\items.views\SystemUpdates.js</Link>
+    </Content>
+    <Content Include="..\..\..\WebCore\WebCore\Scripts\jquery-ui.custom.js">
+      <Link>Scripts\jquery-ui.custom.js</Link>
+    </Content>
+    <Content Include="..\..\..\WebCore\WebCore\Scripts\table-edit.js">
+      <Link>Scripts\table-edit.js</Link>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\Refresh36.png" />
     <Content Include="Content\Images\settings32.png" />
     <Content Include="Content\Images\ToCollapse.png" />
     <Content Include="Content\Images\ToExpand.png" />
-    <Content Include="Content\jquery-ui.custom.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -158,7 +177,6 @@
     <None Include="Properties\PublishProfiles\Restaurant.pubxml" />
     <None Include="Properties\PublishProfiles\SandBox.pubxml" />
     <None Include="Properties\PublishProfiles\T2.pubxml" />
-    <Content Include="Scripts\aramis.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Controls\jquery.mainTable.js" />
@@ -168,7 +186,6 @@
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery-ui.custom.js" />
     <Content Include="Scripts\jquery.dataTables.js" />
     <Content Include="Scripts\jquery.mobile.custom.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
@@ -179,7 +196,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\items.views\Shipment.js" />
-    <Content Include="Scripts\table-edit.js" />
     <Content Include="Scripts\tradehouse.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -258,4 +274,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Target Name="CopyLinkedContentFiles" BeforeTargets="Build">
+    <Copy SourceFiles="%(Content.Identity)" DestinationFiles="%(Content.Link)" SkipUnchangedFiles="true" OverwriteReadOnlyFiles="true" Condition="'%(Content.Link)' != ''" />
+  </Target>
 </Project>
